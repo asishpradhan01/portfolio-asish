@@ -1,0 +1,373 @@
+* {
+    background-color: rgb(116, 145, 145);
+}
+
+.body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'poopins' sans-serif;
+}
+
+nav, .myulelement{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    align-items: center;
+    height: 10vh;
+  }
+
+.myulelement {
+gap: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+    font-size: 25px;
+    font-family: "Kanit", sans-serif;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav a:hover {
+    background-color: rgb(52, 77, 77);
+}
+
+#hamburger {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icons span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.hamburger-ulelements {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.hamburger-ulelements a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    transition: all 0.3 ease-in-out;
+    text-decoration: none;
+}
+
+.hamburger-ulelements li {
+    list-style: none;
+}
+
+.hamburger-ulelements.open {
+    max-height: 300px;
+}
+
+.hamburger-icons.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icons.open span:nth-child(2) {
+   opacity: 0;
+}
+
+.hamburger-icons.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icons span:first-child {
+    transform: none;
+}
+
+.hamburger-icons span:first-child {
+   opacity: 1;
+}
+
+.hamburger-icons span:first-child {
+    transform: none;
+}
+
+.myname {
+  font-family:  "Boldonse", system-ui;
+  color: aliceblue;
+  font-size: 3.5rem;
+
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    object-fit: cover;
+}
+
+section {
+    padding-top: 16vh;
+    width: 115vh;
+    height: 70vh;
+    margin: 0 13rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.pic {
+    display: flex;
+    gap: 2rem;
+}
+
+.paragraph1 {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Kanit", sans-serif;
+}
+
+.socials-containers {
+    display: flex;
+   margin: 0;
+   padding: 0;
+    
+}
+
+.icons {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    margin-top: 12px;
+    
+
+}
+
+.icon2 {
+    width: 62px;
+    height: 62px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+
+.resume {
+  width: 100px;
+  height: 40px;
+  font-size: 13px;
+  border-radius: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 2px solid;
+  background-color: rgb(17, 27, 26);
+  color: aliceblue;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+
+.resume:hover {
+    color: rgb(110, 97, 60);
+}
+
+.para4 {
+    color: rgb(211, 200, 200);
+}
+
+.section {
+    padding-bottom: 5em;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+}
+
+.col {
+    display: flex;
+    width: 50%;
+}
+
+.topheader {
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.topheader h1{
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: aliceblue;
+    margin-bottom: 15px;
+    background-color: skyblue;
+    font-family: "Kanit", sans-serif;
+}
+
+.about-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 30px 70px;
+    padding-inline: 20px;
+    background-color: skyblue;
+    box-shadow: 1px 8px 10px 2px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.about-info p {
+    text-align: center;
+    font-size: 15px;
+    color: aliceblue;
+    background-color: skyblue;
+
+}
+
+.skills-box {
+    margin: 10px;
+}
+
+.skills-header {
+    margin-bottom: 30px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.skills-list span {
+    font-size: 14px;
+    background-color: skyblue;
+    color: bisque;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    width: 100%;
+    height: 315px;
+    background-color: skyblue;
+    border-radius: 10px;
+    box-shadow: 1px 8px 10px 2px;
+}
+
+.contact-info h2 {
+    font-family: "Boldonse", system-ui;
+    color: aliceblue;
+    margin-bottom: 20px;
+    font-size: 15px;
+    background-color: skyblue;
+}
+
+.contact-info p {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    background-color: skyblue;
+}
+
+.contact h1 {
+    font-family: "Boldonse", system-ui;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.contact p {
+    font-family:  "Kanit", sans-serif;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.form-input {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.input-field {
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(225, 234, 241);
+    margin-bottom: 10px;
+}
+
+textarea {
+width: 100%;
+height: 250px;
+background: transparent;
+border: none;
+background-color:  rgb(225, 234, 241);
+border-radius: 10px;
+padding: 15px 20px;
+outline: none;
+}
+
+.btn>.form-btn {
+    width: 100px;
+  height: 40px;
+  font-size: 13px;
+  border-radius: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 2px solid;
+  background-color: rgb(17, 27, 26);
+    color: aliceblue;
+  cursor: pointer;
+  transition: color 0.4s;
+  margin-top: 15px;
+}
+
+.form-btn:hover{
+    color: rgb(110, 97, 60);
+}

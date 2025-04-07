@@ -1,0 +1,64 @@
+@media screen and (max-width: 1400px) {
+    @media screen and (max-width: 1200px) {
+        .navbar {
+            display: none;
+        }
+        #hamburger {
+            display: flex;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .pic, .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pic, .profile, img {
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+        margin: 0 auto 10px;
+    }
+
+    .pic, .profile, .paragraph1 {
+        font-size: 15px;
+    }
+
+    .pic, .resume {
+        padding: 8px 16px;
+    }
+      #about, .row {
+            flex-direction: column;
+            text-align: center;
+           }
+        
+           #about, .col {
+            width: 100%;
+            margin-bottom: 20px;
+            margin: 0 auto 10px;
+           }
+        
+           #about, .about-info, h3 
+           #about, .skills-box,  h3{
+             font-size: 14px;
+           }  
+           #about, .about-info, p {
+            font-size: 10px;
+           }
+          #about, .skills-list, span {
+            font-size: 13px;
+          }
+         #contact-me, .row {
+            flex-direction: column;
+            text-align: center;
+          }
+
+          #contact-me, .col {
+            width: 100%;
+            margin-bottom: 20px;
+            margin: 0 auto 10px;
+          }
+        }
+
+ 
